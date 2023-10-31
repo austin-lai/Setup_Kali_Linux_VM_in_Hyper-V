@@ -401,6 +401,7 @@ if [[ "$option" == "setup" ]]; then
         pip3 install updog
         pip3 install kerbrute
         pip3 install name-that-hash
+        pip3 install qu1ckdr0p2
 
         # Install kerbrute using Go
         go install github.com/ropnop/kerbrute@latest
