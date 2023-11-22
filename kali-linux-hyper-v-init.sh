@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# setterm -foreground white -background blue
+# setterm -store
+
+setopt CORRECT
+setopt ALL_EXPORT
+
+shopt -s extglob
+shopt -s cdspell
+shopt -s direxpand
+shopt -s dirspell
+shopt -s dotglob
+shopt -s histappend
+shopt -s globstar
+shopt -s nullglob
+
 # Get the current path and the filename of the script
 script_file_name="$0"
 
