@@ -238,7 +238,7 @@ nmap_fast_3000() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 25s -vvvvvv -Pn -F --top-ports 3000 -r -sV -O --version-light -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-fast-3000" $target
+    nmap -n --stats-every 25s -vvvvvv -Pn -F --top-ports 3000 -r -sV -O --version-light -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-fast-3000" $target
 }
 
 
@@ -251,7 +251,7 @@ nmap_fast_port() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 25s -vvvvvv -Pn -p- -r -sV -O --version-light -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-fast-port" $target
+    nmap -n --stats-every 25s -vvvvvv -Pn -p- -r -sV -O --version-light -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-fast-port" $target
 }
 
 
@@ -264,7 +264,7 @@ nmap_full_max() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --max-parallelism 30 --max-rate 300 --reason --script=safe,default,discovery,version,vuln --append-output -oN "${filename}.nmap-full-max" $target
+    nmap -n --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --max-parallelism 30 --max-rate 300 --reason --script=safe,default,discovery,version,vuln --append-output -oN "${filename}.nmap-full-max" $target
 }
 
 
@@ -277,7 +277,7 @@ nmap_full_min() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --min-parallelism 30 --min-rate 300 --reason --script=safe,default,discovery,version,vuln --append-output -oN "${filename}.nmap-full-min" $target
+    nmap -n --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --min-parallelism 30 --min-rate 300 --reason --script=safe,default,discovery,version,vuln --append-output -oN "${filename}.nmap-full-min" $target
 }
 
 
@@ -290,7 +290,7 @@ nmap_full_no_script() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-full-no-script" $target
+    nmap -n --stats-every 15s -vvvvvv -Pn -p- -r -A -sCSV -O --version-all -T4 --min-parallelism 30 --min-rate 300 --reason --append-output -oN "${filename}.nmap-full-no-script" $target
 }
 
 
@@ -303,7 +303,7 @@ nmap_open() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 15s -vvvvvv -Pn -p- -r -open --append-output -oN "${filename}.nmap-open" $target
+    nmap -n --stats-every 15s -vvvvvv -Pn -p- -r -open --append-output -oN "${filename}.nmap-open" $target
 }
 
 
@@ -316,7 +316,7 @@ nmap_ping() {
     echo -n "Specify output filename (e.g., IP/FQDN): "
     read filename
 
-    nmap -n --privileged --stats-every 15s -vvvvvv -sn --append-output -oN "${filename}.nmap-ping" $target
+    nmap -n --stats-every 15s -vvvvvv -sn --append-output -oN "${filename}.nmap-ping" $target
 }
 
 
