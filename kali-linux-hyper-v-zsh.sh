@@ -118,12 +118,6 @@ john_result() {
 
 
 
-kali_hyper_v() {
-    ssh kali@kali-hyper-v -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -p 22 -i "/mnt/c/austin-tools/kali-hyper-v-id_rsa"
-}
-
-
-
 nc_recv() {
     echo -e "\n nc -nlvvp 9998 > \$* \n"
 }
