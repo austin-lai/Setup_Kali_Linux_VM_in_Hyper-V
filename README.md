@@ -1250,6 +1250,11 @@ elif [[ "$option" == "set-terminal" ]]; then
       # Set Screen Resolution inside Kali
       sudo -S <<< "kali" sed -i.bak 's/^GRUB_CMDLINE_LINUX_DEFAULT="quiet"$/GRUB_CMDLINE_LINUX_DEFAULT="quiet video=hyperv_fb:1920x1080"/' /etc/default/grub
       sleep 2
+      cat /etc/default/grub
+      sleep 2
+      ls -la /etc/default | grep grub
+      sleep 2
+      sudo -S <<< "kali" update-grub
 
       
       # Thunar File Manager enable Always Show Hidden Files
