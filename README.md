@@ -1246,6 +1246,12 @@ elif [[ "$option" == "set-terminal" ]]; then
       xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 13"
       sleep 2
 
+      
+      # Set Screen Resolution inside Kali
+      sudo -S <<< "kali" sed -i.bak 's/^GRUB_CMDLINE_LINUX_DEFAULT="quiet"$/GRUB_CMDLINE_LINUX_DEFAULT="quiet video=hyperv_fb:1920x1080"/' /etc/default/grub
+      sleep 2
+
+      
       # Thunar File Manager enable Always Show Hidden Files
       # ~/.config/Thunar/thunarrc
       # LastShowHidden=TRUE
