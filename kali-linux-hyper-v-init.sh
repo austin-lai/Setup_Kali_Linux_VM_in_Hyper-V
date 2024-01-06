@@ -265,6 +265,8 @@ if [[ "$option" == "setup" ]]; then
         # Install rustscan
         cargo install rustscan
         sleep 2
+        cargo install eza
+        sleep 2
 
         # Install fast-syntax-highlighting and zsh-autocomplete
         git clone https://github.com/zdharma-continuum/fast-syntax-highlighting /home/kali/.config/fast-syntax-highlighting
